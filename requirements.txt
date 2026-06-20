@@ -1,0 +1,5 @@
+QuantLib>=1.42
+streamlit>=1.54
+plotly>=6.5
+pandas>=2.0
+numpy>=1.26
