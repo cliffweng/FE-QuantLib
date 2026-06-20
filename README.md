@@ -73,3 +73,25 @@ FE-QuantLib/
 - **Swaps** — Uses a synthetic `IborIndex` with 0 fixing-day lag so all coupons are projected from the forward curve without requiring historical fixings.
 - **Yield curve** — Bootstrapped with `PiecewiseLogCubicDiscount` interpolation for a smooth, arbitrage-free curve.
 - **FX forwards** — Priced analytically via `F = S · DF_foreign / DF_domestic` (covered interest rate parity).
+
+## Credits
+
+This project stands on the shoulders of the following open-source projects:
+
+**[QuantLib](https://www.quantlib.org/)**
+The core pricing engine. An open-source C++ library for quantitative finance with Python bindings via SWIG, originally created by Ferdinando Ametrano and Marco Marchioro and maintained by [Luigi Ballabio](https://github.com/lballabio/QuantLib) and a large community of contributors. Released under the BSD license.
+
+**[Streamlit](https://streamlit.io/)**
+The web application framework. Built and maintained by [Snowflake Inc.](https://www.snowflake.com/) and the open-source community. Released under the Apache 2.0 license.
+
+**[Plotly](https://plotly.com/python/)**
+Interactive charting library used for all price-yield curves, Greeks surfaces, and 3-D visualisations. Maintained by [Plotly Technologies Inc.](https://plotly.com/) Released under the MIT license.
+
+**[pandas](https://pandas.pydata.org/) / [NumPy](https://numpy.org/)**
+Data manipulation and numerical computing. Maintained by their respective open-source communities under BSD licenses.
+
+## Author
+
+Built by **[Cliff Weng](https://github.com/cliffweng)**
+
+If you use or adapt this project, please credit Cliff Weng and link back to [https://github.com/cliffweng](https://github.com/cliffweng). A simple attribution in your README or UI goes a long way — thank you!

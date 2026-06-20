@@ -43,3 +43,27 @@ Each page follows the same pattern:
 > QuantLib version in use: `QuantLib {}`
 """.format(__import__("QuantLib").__version__)
 )
+
+st.divider()
+st.markdown(
+    """
+### Built with
+| Library | Role |
+|---|---|
+| [QuantLib](https://www.quantlib.org/) | Pricing engine — bonds, options, swaps, yield curves, FX forwards |
+| [Streamlit](https://streamlit.io/) | Interactive web UI and parameter controls |
+| [Plotly](https://plotly.com/python/) | Interactive charts and 3-D surfaces |
+| [pandas](https://pandas.pydata.org/) | Tabular data and scenario tables |
+| [NumPy](https://numpy.org/) | Numerical arrays and sensitivity sweeps |
+
+**QuantLib** is an open-source C++ library for quantitative finance, with Python bindings via SWIG.
+It is maintained by the [QuantLib community](https://github.com/lballabio/QuantLib) and released under the BSD license.
+
+**Streamlit** is an open-source Python framework for building data apps, maintained by [Snowflake](https://streamlit.io/) and released under the Apache 2.0 license.
+
+---
+Built by **[Cliff Weng](https://github.com/cliffweng)**
+
+*If you use or adapt this app, please credit [Cliff Weng](https://github.com/cliffweng) and link back to the original repository.*
+"""
+)
